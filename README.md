@@ -63,6 +63,53 @@ This repository documents my completion of the **100Hires Junior Growth Marketin
 > **Fix:** I switched to HTTPS with a personal access token (created in GitHub Settings → Developer Settings → Personal Access Tokens) and the push worked.
 
 ---
+## ⚙️ n8n Automation Projects
+ 
+### 1. AI-Powered Lead Generation Agent
+**Stack:** n8n · Apify · Google Sheets · JavaScript
+ 
+A fully automated agent that accepts a target industry niche and company age filter as inputs, then autonomously discovers founders of early-stage companies — with zero manual research. Results are written directly to a Google Sheet, ready for outreach.
+ 
+- Generates 5 targeted LinkedIn search strings from a single niche input
+- Uses free-tier Apify actor with async run polling — no paid APIs
+- Custom JavaScript extracts founder name, title, company, website, LinkedIn URL, founding year, and estimated age with regex-based age filtering
+- Writes up to 200 leads in batches of 10 using a SplitInBatches loop with deduplication
+- Single-node config — change niche or age filter without touching any other node
+> 12 workflow nodes · 5 search query variants · 200 leads per run · 9 structured fields
+ ![alt text](<Images/Lead Gen Agent – Founder Finder.png>)
+---
+ 
+### 2. AI-Powered Outbound Pipeline *(Work in Progress)*
+**Stack:** n8n · Apify · Claude AI · Hunter.io · Abstract API · Google Sheets · Gmail API
+ 
+A fully automated B2B outbound system built as a solo marketing hire with zero tool budget. Takes an ICP definition as input and autonomously discovers leads, enriches contact data, researches buying signals, generates personalised outreach using AI, and sends cold emails — end to end.
+ 
+- Scrapes 300+ LinkedIn profiles per run via Apify using Google operator search queries from ICP parameters
+- Enriches each lead with verified email via Hunter.io, validates deliverability via Abstract API
+- Searches for live intent signals — funding rounds, AI hiring activity, product launches
+- Uses Claude AI to write a personalised subject line, opening sentence, and email body per lead
+- Saves enriched leads and email copy to Google Sheets, sends via Gmail, logs all activity
+**Problems solved:** Eliminated 10+ hours/week of manual lead research across 5–6 tools. Built entirely on free-tier APIs — no Apollo, no ZoomInfo, no paid sales tools.
+![alt text](Images/image.png) 
+---
+ 
+### 3. Automated Email Campaign Pipeline
+**Stack:** n8n · Google Sheets · Microsoft Outlook · Gmail · Canva HTML Export
+ 
+A no-code automation workflow that pulls lead data from Google Sheets and sends a branded HTML email campaign at scale with zero manual intervention per send.
+ 
+- Reads all leads from a Google Sheets database on trigger
+- Loops through each lead individually using a batched iterator to respect rate limits
+- Sends a fully designed HTML email (exported from Canva) to each lead
+- Configured for both Microsoft Outlook (via Azure OAuth2) and Gmail (via OAuth2)
+![alt text](<Images/Gmail Email Campaign from Google Sheets.png>)
+---
+### 4. Personalised Icebreaker Generator
+**Stack:** n8n · Apify
+ 
+A workflow that scrapes live signals from a company's website and a prospect's LinkedIn profile, then auto-generates personalised icebreakers for LinkedIn or cold email outreach campaigns — making every message feel hand-written at scale.
+ ![alt text](<Images/Personalised Icebreaker Generator.png>)
+---
 
 ## 💼 My Marketing Toolkit
 
