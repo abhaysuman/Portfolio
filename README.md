@@ -108,7 +108,7 @@ A no-code automation workflow that pulls lead data from Google Sheets and sends 
 **Stack:** n8n · Apify
  
 A workflow that scrapes live signals from a company's website and a prospect's LinkedIn profile, then auto-generates personalised icebreakers for LinkedIn or cold email outreach campaigns — making every message feel hand-written at scale.
- ![alt text](<Images/Personalised Icebreaker Generator.png>)
+![alt text](<Images/Personalised Icebreaker Generator.png>)
 ---
 
 ## 💼 My Marketing Toolkit
