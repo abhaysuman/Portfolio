@@ -2,7 +2,7 @@
 
 **Growth & GTM-Focused Marketer | AI-Driven Campaigns | Demand Generation | SEO & Paid Media**
 
-📧 abhaysuman60@gmail.com | 📱 8630892870 | [LinkedIn](https://linkedin.com/in/abhaysuman)
+📧 abhaysuman60@gmail.com | 📱 8630892870 | [LinkedIn](https://www.linkedin.com/in/abhay-suman/)
 
 ---
 
