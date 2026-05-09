@@ -149,9 +149,3 @@ Built outreach strategies, digital marketing campaigns, and pitch decks.
 - **B.Tech** in Information Technology — Graphic Era Hill University *(2020–2023)*
 
 ---
-
-## 🔗 This is just the beginning.
-
-This portfolio will grow as I complete more steps in the 100Hires process — demonstrating research, synthesis, judgment, and AI-tool skills that any forward-thinking company would value.
-
-> *"Finding answers on your own is part of what we're looking for."* — Alex Kravets, CEO, 100Hires
